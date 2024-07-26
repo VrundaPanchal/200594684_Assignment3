@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SearchView
+        android:id="@+id/searchMovie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:queryHint="Search here"
+        android:layout_margin="4dp"
+        android:padding="4dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recMovieList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:layout_weight="9"/>
+
+</LinearLayout>
